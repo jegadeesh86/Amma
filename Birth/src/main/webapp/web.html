@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+            .birthday-scene {
+                width: 100%;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: linear-gradient(135deg, #FF69B4, #FFB6C1);
+                perspective: 1000px;
+            }
+    
+            .scene-container {
+                position: relative;
+                width: 800px;
+                height: 600px;
+                transform-style: preserve-3d;
+            }
+    
+            .woman {
+                position: absolute;
+                width: 300px;
+                height: 400px;
+                left: 50%;
+                bottom: 20%;
+                transform: translateX(-50%);
+                background: url('https://example.com/woman-image.png') no-repeat center;
+                /* Note: Replace with actual woman image URL */
+            }
+    
+            .cake {
+                position: absolute;
+                width: 200px;
+                height: 150px;
+                left: 60%;
+                bottom: 30%;
+                transform: translateX(-50%) rotateY(-20deg);
+                background: #FFD700;
+                border-radius: 10px;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            }
+    
+            .cake::before {
+                content: "Chandhiraleka";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-family: 'Dancing Script', cursive;
+                font-size: 24px;
+                color: #FF1493;
+                text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            }
+    
+            .party-decorations {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: url('https://example.com/party-background.png') repeat;
+                /* Note: Replace with actual party decoration image URL */
+                opacity: 0.3;
+            }
+    
+            .age {
+                position: absolute;
+                top: 20%;
+                right: 20%;
+                font-size: 120px;
+                font-weight: bold;
+                color: rgba(255,255,255,0.8);
+                text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            }
+        </style>
+    
+        <div class="birthday-scene">
+            <div class="party-decorations"></div>
+            <div class="scene-container">
+                <div class="woman"></div>
+                <div class="cake"></div>
+                <div class="age">30</div>
+            </div>
+        </div>
+    <style>
+                .gallery {
+                    perspective: 1000px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 50px;
+                }
+                
+                .image-3d {
+                    width: 200px;
+                    height: 200px;
+                    margin: 0 20px;
+                    transform-style: preserve-3d;
+                    transition: transform 0.5s;
+                    cursor: pointer;
+                }
+                
+                .image-3d:hover {
+                    transform: rotateY(45deg);
+                }
+                
+                .image-3d img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 10px;
+                    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+                }
+            </style>
+    
+            <div class="gallery">
+                <div class="image-3d">
+                    <img src="birthday-cake.jpg" alt="Birthday Cake">
+                </div>
+                <div class="image-3d">
+                    <img src="balloons.jpg" alt="Balloons">
+                </div>
+                <div class="image-3d">
+                    <img src="gifts.jpg" alt="Gifts">
+                </div>
+            </div>
+    <div class="cake-gallery">
+            <style>
+                .cake-gallery {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 20px;
+                    padding: 20px;
+                    background: #fff5f5;
+                    border-radius: 15px;
+                    margin: 20px;
+                }
+                
+                .cake-item {
+                    position: relative;
+                    overflow: hidden;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+                    transition: transform 0.3s ease;
+                }
+                
+                .cake-item:hover {
+                    transform: scale(1.05);
+                }
+                
+                .cake-item img {
+                    width: 100%;
+                    height: 250px;
+                    object-fit: cover;
+                }
+                
+                .cake-caption {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    background: rgba(255,255,255,0.9);
+                    padding: 10px;
+                    text-align: center;
+                    font-size: 16px;
+                    color: #333;
+                }
+            </style>
+            
+            <div class="cake-item">
+                <img src="chocolate-cake.jpg" alt="Chocolate Birthday Cake">
+                <div class="cake-caption">Chocolate Delight</div>
+            </div>
+            <div class="cake-item">
+                <img src="vanilla-cake.jpg" alt="Vanilla Birthday Cake">
+                <div class="cake-caption">Vanilla Dream</div>
+            </div>
+            <div class="cake-item">
+                <img src="strawberry-cake.jpg" alt="Strawberry Birthday Cake">
+                <div class="cake-caption">Strawberry Bliss</div>
+            </div>
+            <div class="cake-item">
+                <img src="rainbow-cake.jpg" alt="Rainbow Birthday Cake">
+                <div class="cake-caption">Rainbow Magic</div>
+            </div>
+            <div class="cake-item">
+                <img src="red-velvet-cake.jpg" alt="Red Velvet Birthday Cake">
+                <div class="cake-caption">Red Velvet Romance</div>
+            </div>
+            <div class="cake-item">
+                <img src="ice-cream-cake.jpg" alt="Ice Cream Birthday Cake">
+                <div class="cake-caption">Ice Cream Paradise</div>
+            </div>
+        </div>
+    <div class="cake-item">
+                <img src="tiramisu-cake.jpg" alt="Tiramisu Birthday Cake">
+                <div class="cake-caption">Tiramisu Temptation</div>
+            </div>
+            <div class="cake-item">
+                <img src="carrot-cake.jpg" alt="Carrot Birthday Cake">
+                <div class="cake-caption">Carrot Comfort</div>
+            </div>
+            <div class="cake-item">
+                <img src="fruit-cake.jpg" alt="Fruit Birthday Cake">
+                <div class="cake-caption">Fruit Fiesta</div>
+            </div>
+            <div class="cake-item">
+                <img src="cheesecake.jpg" alt="Cheesecake Birthday Cake">
+                <div class="cake-caption">Cheesecake Charm</div>
+            </div>
+            <div class="cake-item">
+                <img src="marble-cake.jpg" alt="Marble Birthday Cake">
+                <div class="cake-caption">Marble Magic</div>
+            </div>
+            <div class="cake-item">
+                <img src="coconut-cake.jpg" alt="Coconut Birthday Cake">
+                <div class="cake-caption">Coconut Cloud</div>
+            </div>
+        </div>
+    
+</body>
+</html>
